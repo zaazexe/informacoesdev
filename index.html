@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Integrado: Web, Mobile e Dados</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="hero">
+    <div class="container">
+        <h1>A Arquitetura por Trás dos Seus Apps Favoritos</h1>
+        <p>Descubra como <strong>Web</strong>, <strong>Banco de Dados</strong> e <strong>Mobile</strong> se unem para criar sistemas como <strong>iFood</strong> e <strong>Spotify</strong>.</p>
+        <button id="theme-toggle" aria-label="Mudar Tema"><i class="fas fa-sun"></i> Mudar Tema</button>
+    </div>
+</header>
+
+    <main class="container">
+
+        <section id="introducao" class="card">
+            <div class="card-icon"><i class="fas fa-sitemap"></i></div>
+            <h2>INTRODUÇÃO: O Sistema Completo</h2>
+            <p>Nos dias de hoje, quase todo aplicativo que a gente usa junta web, banco de dados e mobile em um sistema só. Cada parte faz um pedaço do processo, e tudo funciona junto para entregar as informações na tela do usuário.</p>
+        </section>
+
+        <section id="web-frontend" class="card">
+            <div class="card-icon"><i class="fas fa-code"></i></div>
+            <h2>HTML & WEB: A Interface do Usuário</h2>
+            <p>O <strong>HTML</strong> é a base de qualquer página web, ele organiza o conteúdo que aparece no navegador, como textos, imagens, botões e seções. Ele não faz o visual bonito sozinho, mas cria a estrutura para isso. Quem cuida do visual é o <strong>CSS</strong>, e quem adiciona interação é o <strong>JavaScript</strong>.</p>
+            <p class="note">O <strong>Front-End</strong> é basicamente tudo o que aparece para o usuário, e o HTML é uma parte essencial disso.</p>
+        </section>
+
+        <section id="bancos-dados" class="card">
+            <div class="card-icon"><i class="fas fa-database"></i></div>
+            <h2>BANCOS DE DADOS: A Memória do Sistema</h2>
+            <p>Um banco de dados é onde o sistema guarda todas as informações importantes, como dados de usuários, pedidos, playlists, histórico, senhas criptografadas e muito mais.</p>
+            <p>Ele é importante porque sem ele o sistema não tem memória, nada fica salvo. Aplicações grandes dependem muito de bancos de dados para funcionar de forma rápida e segura. Podem ser <strong>SQL</strong> ou <strong>NoSQL</strong>, mas todos servem para armazenar e entregar informações.</p>
+        </section>
+
+        <section id="aplicativos-mobile" class="card">
+            <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h2>APLICATIVOS MOBILE: A Portabilidade</h2>
+            <p>Aplicativos mobile são programas feitos para <strong>Android</strong> e <strong>iOS</strong>. Eles não guardam todas as informações dentro deles, por isso precisam conversar com servidores o tempo todo.</p>
+            <p>Isso acontece por meio de <strong>requisições HTTP</strong> (como GET e POST), trocando informações em <strong>JSON</strong>. Essa comunicação é feita por uma <strong>API</strong>, que funciona como uma ponte entre o app e o servidor. O aplicativo só mostra os dados; quem faz o trabalho pesado é o servidor.</p>
+        </section>
+
+        <section id="integracao" class="card integration-flow">
+            <div class="card-icon"><i class="fas fa-link"></i></div>
+            <h2>INTEGRAÇÃO: Unindo as Peças</h2>
+            <p>Em sistemas reais tudo funciona em conjunto. A <strong>API</strong> liga esses três lados, entregando dados atualizados para qualquer um que pedir.</p>
+
+            <div class="flow-chart">
+                <div class="flow-step"><span>1. Usuário Interage</span><i class="fas fa-hand-pointer"></i></div>
+                <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="flow-step"><span>2. API Recebe</span><i class="fas fa-server"></i></div>
+                <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="flow-step"><span>3. Servidor Processa</span><i class="fas fa-cogs"></i></div>
+                <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="flow-step"><span>4. BD Salva/Busca</span><i class="fas fa-database"></i></div>
+                <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="flow-step step-return"><span>5. Retorna ao Usuário</span><i class="fas fa-display"></i></div>
+            </div>
+        </section>
+
+        <section id="exemplos" class="examples-grid">
+            <h2>Exemplos Reais</h2>
+
+            <div class="example-card">
+                <h3><i class="fas fa-utensils"></i> iFood</h3>
+                <p>O iFood junta várias tecnologias: o <strong>HTML</strong> e o <strong>App Mobile</strong> mostram o cardápio. Quando o usuário pede, o app envia os dados para a <strong>API</strong>, que registra no servidor e salva no <strong>Banco de Dados</strong>. O status é atualizado de volta para o usuário.</p>
+            </div>
+
+            <div class="example-card">
+                <h3><i class="fab fa-spotify"></i> Spotify</h3>
+                <p>A versão web usa <strong>HTML</strong>. O app mobile chama a <strong>API</strong> para carregar músicas e playlists. O <strong>Banco de Dados</strong> guarda histórico e favoritos. Tudo sincronizado: se você favoritar no celular, aparece na versão web também.</p>
+            </div>
+        </section>
+
+    <button id="back-to-top" aria-label="Voltar ao Topo"><i class="fas fa-arrow-up"></i></button>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Isaac Ramos | SENACRS - Santa Cruz do Sul</p>
+        </div>
+    </footer>
+    
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
